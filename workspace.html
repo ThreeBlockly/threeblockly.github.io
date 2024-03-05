@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+		<script src="https://unpkg.com/blockly"></script>
+	</head>
+	<body>
+
+		<div style="height: 99%; width: 100%; display:flex;">
+			<div id="blocklyDiv" style="height: 100%; width: 50%; border: lightgrey solid; border-width: thin"></div>
+			<div id="threeDiv" style="height: 100%; width: 50%; border: lightgrey solid; border-width: thin"></div>
+		</div>
+
+		<div style="display:none" id="codeDiv"></div>
+
+		<script src="js/eg.js"></script>
+		
+		<!--<script type="module" src="/dev-threeblockly/threeblockly.js"></script>-->
+		<script src="/threeblockly/threeblockly.js"></script>
+
+		<script defer src="index.js"></script>
+	</body>
+</html>

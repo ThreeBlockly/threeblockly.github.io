@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>ThreeBlockly - Introduction</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ThreeBlockly - Introduction">
+    <meta name="author" content="https://github.com/ThreeBlockly">
+    <link rel="shortcut icon" href="../img/tb_white.png">
+    <link id="theme-style" rel="stylesheet" href="../css/theme.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+	
+	<script src="https://unpkg.com/blockly"></script>
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo logo-icon me-2" src="../img/tb_white.png" alt="logo"><span class="logo-text">Three<span class="text-alt">Blockly</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><img class="logo-xs" src="../img/intro.svg"></img></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Blocks</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Code</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Graphics</a></li>
+			    </ul>
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction</h1>
+						<section class="docs-intro">
+						    <p>ThreeBlockly is a simple and fun way to learn and build graphics with Blockly and ThreeJS</p>
+						</section><!--//docs-intro-->
+				    </header>
+					
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Blocks</h2>
+						<div id="blocklyDiv" style="height: 250px; width: 99%; border: grey solid; border-width: thin"></div>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Code ( Generated )</h2>
+						<div id="codeDiv" style="height: 250px; width: 99%; border: grey solid; border-width: thin; overflow-x:auto"></div>
+					</section><!--//section-->
+
+				    <section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Graphics ( Hello World ) </h2>
+						<div id="threeDiv" style="height: 300px; width: 99%; border: grey solid; border-width: thin"></div>
+					</section><!--//section-->
+					
+					<a onclick="javascript:openInTI('intro')" target="_blank" style="margin-top: 10px; " class="btn btn-primary">Open in ThreeInventor</a></li>
+
+			    </article>
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			            <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart" style="color: #fb866a;"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+
+	<script src="../plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="../js/docs.js"></script>
+	
+	<script src="../js/eg.js"></script>
+
+	<!--<script type="module" src="/dev-threeblockly/threeblockly.js"></script>-->
+	<script src="/threeblockly/threeblockly.js"></script>
+	
+	<script> window.id = 'intro' </script>
+	<script defer src="../index.js"></script>
+
+</body>
+</html>
